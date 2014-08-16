@@ -7,17 +7,17 @@ import alphanews.newsapp.server.commands.AlphabankNewsCommand;
 /**
  * Created by Zatsepin on 14.08.2014.
  */
-public class AlphaNewsFactory implements NewsFactory{
+public class AlphaNewsFileFactory implements NewsFactory{
 
     private final Context mContext;
 
-    public AlphaNewsFactory(Context context) {
+    public AlphaNewsFileFactory(Context context) {
         mContext = context;
     }
 
     @Override
     public NewsEngine createNewsProcessor() {
-        return new NewsEngine(new AlphabankNewsCommand(), new AlphaSimpleXmlParser(), new AlphaFileDao(mContext));
+        return new NewsEngine(new AlphabankNewsCommand(), new AlphaSimpleXmlParser(), createNewsDao());
     }
 
     @Override

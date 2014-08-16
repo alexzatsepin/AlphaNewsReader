@@ -10,5 +10,4 @@ import alphanews.newsapp.domain.News;
 public interface NewsDao {
     List<News> getAllNews();
     void saveNews(List<News> news);
-    News getNewsByLink(String link);
 }

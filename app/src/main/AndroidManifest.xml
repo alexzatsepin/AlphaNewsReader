@@ -2,14 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="alphanews.newsapp" >
 
-    <application
+    <application android:name=".NewsApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".SplashScreenActivity"
-            android:label="@string/app_name" >
+            android:name="alphanews.newsapp.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,13 +19,19 @@
         </activity>
 
         <service
-            android:name=".UpdateNewsService"
+            android:name="alphanews.newsapp.UpdateNewsService"
             android:exported="false" >
         </service>
 
         <activity
-            android:name=".NewsListActivity"
-            android:label="@string/title_activity_news_list" >
+            android:name="alphanews.newsapp.NewsListActivity"
+            android:label="@string/title_activity_news_list"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="alphanews.newsapp.NewsActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:label="@string/title_activity_news" >
         </activity>
     </application>
 

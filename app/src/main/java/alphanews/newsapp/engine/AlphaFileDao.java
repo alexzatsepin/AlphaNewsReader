@@ -68,8 +68,4 @@ public class AlphaFileDao extends BaseNewsDao {
         }
     }
 
-    @Override
-    public News getNewsByLink(String link) {
-        return null;
-    }
 }

@@ -2,6 +2,7 @@
   <dictionary name="Zatsepin">
     <words>
       <w>alphabank</w>
+      <w>sqlite</w>
     </words>
   </dictionary>
 </component>
