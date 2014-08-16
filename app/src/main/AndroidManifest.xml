@@ -21,7 +21,13 @@
             android:name=".UpdateNewsService"
             android:exported="false" >
         </service>
+
+        <activity
+            android:name=".NewsListActivity"
+            android:label="@string/title_activity_news_list" >
+        </activity>
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

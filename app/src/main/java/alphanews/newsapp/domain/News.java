@@ -1,60 +1,69 @@
 package alphanews.newsapp.domain;
 
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+
 /**
  * Created by Zatsepin on 14.08.2014.
  */
+@Root(name = "item")
 public class News {
-    private String mTitle;
-    private String mLink;
-    private String mDescription;
-    private String mPubDate;
-    private String mGuid;
+    @Element
+    private String title;
+    @Element
+    private String link;
+    @Element
+    private String description;
+    @Element
+    private String pubDate;
+    @Element
+    private String guid;
 
     public String getTitle() {
-        return mTitle;
+        return title;
     }
 
     public void setTitle(String mTitle) {
-        this.mTitle = mTitle;
+        this.title = mTitle;
     }
 
     public String getLink() {
-        return mLink;
+        return link;
     }
 
     public void setLink(String mLink) {
-        this.mLink = mLink;
+        this.link = mLink;
     }
 
     public String getDescription() {
-        return mDescription;
+        return description;
     }
 
     public void setDescription(String mDescription) {
-        this.mDescription = mDescription;
+        this.description = mDescription;
     }
 
     public String getPubDate() {
-        return mPubDate;
+        return pubDate;
     }
 
     public void setPubDate(String mPubDate) {
-        this.mPubDate = mPubDate;
+        this.pubDate = mPubDate;
     }
 
     public String getGuid() {
-        return mGuid;
+        return guid;
     }
 
-    public void setmGuid(String mGuid) {
-        this.mGuid = mGuid;
+    public void setGuid(String mGuid) {
+        this.guid = mGuid;
     }
 
     @Override
     public String toString() {
         return "News{" +
-                "mTitle='" + mTitle + '\'' +
-                ", mLink='" + mLink + '\'' +
+                "title='" + title + '\'' +
+                ", link='" + link + '\'' +
                 '}';
     }
 }

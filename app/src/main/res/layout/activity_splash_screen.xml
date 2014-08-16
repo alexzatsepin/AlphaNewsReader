@@ -9,7 +9,8 @@
     tools:context=".SplashScreenActivity">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="Welcome to Alpha News App"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
