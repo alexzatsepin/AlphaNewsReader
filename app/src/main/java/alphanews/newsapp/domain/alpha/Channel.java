@@ -1,4 +1,4 @@
-package alphanews.newsapp.domain;
+package alphanews.newsapp.domain.alpha;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;

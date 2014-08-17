@@ -1,4 +1,4 @@
-package alphanews.newsapp.engine.db;
+package alphanews.newsapp.engine.alpha;
 
 import com.j256.ormlite.dao.BaseDaoImpl;
 import com.j256.ormlite.support.ConnectionSource;
@@ -6,7 +6,7 @@ import com.j256.ormlite.support.ConnectionSource;
 import java.sql.SQLException;
 import java.util.List;
 
-import alphanews.newsapp.domain.News;
+import alphanews.newsapp.domain.alpha.News;
 import alphanews.newsapp.engine.NewsDao;
 
 /**

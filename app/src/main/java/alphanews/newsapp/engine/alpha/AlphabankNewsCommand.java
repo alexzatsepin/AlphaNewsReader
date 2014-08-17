@@ -1,4 +1,6 @@
-package alphanews.newsapp.server.commands;
+package alphanews.newsapp.engine.alpha;
+
+import alphanews.newsapp.engine.ServerCommand;
 
 /**
  * Created by Zatsepin on 14.08.2014.
@@ -6,7 +8,7 @@ package alphanews.newsapp.server.commands;
 public class AlphabankNewsCommand extends ServerCommand {
 
     @Override
-    String getUrl() {
+    protected String getUrl() {
         return "http://pda.alfabank.ru/_/rss/_rss.html";
     }
 }

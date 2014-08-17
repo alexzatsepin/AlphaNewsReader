@@ -1,4 +1,4 @@
-package alphanews.newsapp.engine;
+package alphanews.newsapp.engine.alpha;
 
 import android.content.Context;
 
@@ -11,13 +11,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import alphanews.newsapp.domain.Channel;
-import alphanews.newsapp.domain.News;
+import alphanews.newsapp.domain.alpha.Channel;
+import alphanews.newsapp.domain.alpha.News;
+import alphanews.newsapp.engine.BaseNewsDao;
 
 /**
  * Created by Zatsepin on 16.08.2014.
  */
-public class AlphaFileDao extends BaseNewsDao {
+class AlphaFileDao extends BaseNewsDao {
 
     private static final String CACHE_FILE_NAME = "alpha_news.xml";
 

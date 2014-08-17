@@ -2,7 +2,7 @@ package alphanews.newsapp.engine;
 
 import java.util.List;
 
-import alphanews.newsapp.domain.News;
+import alphanews.newsapp.domain.alpha.News;
 
 /**
  * Created by Zatsepin on 14.08.2014.

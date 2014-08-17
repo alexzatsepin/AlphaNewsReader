@@ -1,4 +1,4 @@
-package alphanews.newsapp.server.commands;
+package alphanews.newsapp.engine;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -50,5 +50,5 @@ public abstract class ServerCommand implements Command {
         return sb.toString();
     }
 
-    abstract String getUrl();
+    protected abstract String getUrl();
 }

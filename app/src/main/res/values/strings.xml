@@ -7,6 +7,7 @@
     <string name="title_activity_news_list">NewsListActivity</string>
     <string name="title_activity_news">NewsActivity</string>
     <string name="share">Отправить</string>
-    <string name="news_was_refresh">Новости успешно обновлены</string>
+    <string name="news_was_updated">Новости успешно обновлены</string>
+    <string name="news_update_error">Новости не были обновлены. Проверьте соединение</string>
 
 </resources>

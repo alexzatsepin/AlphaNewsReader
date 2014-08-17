@@ -1,4 +1,4 @@
-package alphanews.newsapp.domain;
+package alphanews.newsapp.domain.alpha;
 
 import android.provider.ContactsContract;
 

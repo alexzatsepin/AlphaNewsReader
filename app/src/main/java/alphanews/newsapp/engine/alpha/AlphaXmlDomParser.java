@@ -1,4 +1,4 @@
-package alphanews.newsapp.engine;
+package alphanews.newsapp.engine.alpha;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -13,12 +13,13 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import alphanews.newsapp.domain.News;
+import alphanews.newsapp.domain.alpha.News;
+import alphanews.newsapp.engine.Parser;
 
 /**
  * Created by Zatsepin on 14.08.2014.
  */
-public class AlphaXmlDomParser implements Parser {
+class AlphaXmlDomParser implements Parser {
     @Override
     public List<News> parse(String rawData) throws Exception {
 

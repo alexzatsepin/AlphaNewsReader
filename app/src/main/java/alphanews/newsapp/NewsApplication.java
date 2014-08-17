@@ -4,10 +4,10 @@ import android.app.Application;
 
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 
-import alphanews.newsapp.engine.AlphaNewsDatabaseFactory;
-import alphanews.newsapp.engine.AlphaNewsFileFactory;
+import alphanews.newsapp.engine.alpha.AlphaDatabaseHelper;
+import alphanews.newsapp.engine.alpha.AlphaNewsDatabaseFactory;
+import alphanews.newsapp.engine.alpha.AlphaNewsFileFactory;
 import alphanews.newsapp.engine.NewsFactory;
-import alphanews.newsapp.engine.db.NewsDatabaseHelper;
 
 /**
  * Created by Zatsepin on 17.08.2014.
@@ -17,7 +17,7 @@ public class NewsApplication extends Application {
      * Indicates what type of cache use, sqlite or internal storage
      */
     private final static boolean CONFIG_DB_CACHE = true;
-    private NewsDatabaseHelper mDbHelper;
+    private AlphaDatabaseHelper mDbHelper;
     private NewsFactory mNewsFactory;
 
     @Override
@@ -30,9 +30,9 @@ public class NewsApplication extends Application {
         }
     }
 
-    public synchronized NewsDatabaseHelper getDataBaseHelper(){
+    public synchronized AlphaDatabaseHelper getDataBaseHelper(){
         if (mDbHelper == null){
-            mDbHelper = OpenHelperManager.getHelper(this, NewsDatabaseHelper.class);
+            mDbHelper = OpenHelperManager.getHelper(this, AlphaDatabaseHelper.class);
         }
         return mDbHelper;
     }

@@ -1,4 +1,4 @@
-package alphanews.newsapp.engine.db;
+package alphanews.newsapp.engine.alpha;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,19 +9,19 @@ import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
 
-import alphanews.newsapp.domain.News;
+import alphanews.newsapp.domain.alpha.News;
 
 /**
  * Created by Zatsepin on 17.08.2014.
  */
-public class NewsDatabaseHelper extends OrmLiteSqliteOpenHelper {
+public class AlphaDatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     private static final String DATABASE_NAME = "alphanews.db";
     private static final int DB_VERSION = 1;
 
     private AlphaDbDao mNewsDao = null;
 
-    public NewsDatabaseHelper(Context context) {
+    public AlphaDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DB_VERSION);
     }
 
