@@ -2,15 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="alphanews.newsapp" >
 
-    <application android:name=".NewsApplication"
+    <application
+        android:name=".NewsApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="alphanews.newsapp.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,19 +20,24 @@
         </activity>
 
         <service
-            android:name="alphanews.newsapp.UpdateNewsService"
+            android:name=".UpdateNewsService"
             android:exported="false" >
         </service>
 
         <activity
-            android:name="alphanews.newsapp.NewsListActivity"
+            android:name=".NewsListActivity"
             android:label="@string/title_activity_news_list"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
         <activity
-            android:name="alphanews.newsapp.NewsActivity"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            android:label="@string/title_activity_news" >
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_news"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DeveloperInfoActivity"
+            android:label="@string/title_activity_developer_info"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
     </application>
 

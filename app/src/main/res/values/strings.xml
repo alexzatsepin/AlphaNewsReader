@@ -9,5 +9,7 @@
     <string name="share">Отправить</string>
     <string name="news_was_updated">Новости успешно обновлены</string>
     <string name="news_update_error">Новости не были обновлены. Проверьте соединение</string>
+    <string name="developer_info">Информация о разработчике</string>
+    <string name="title_activity_developer_info">DeveloperInfoActivity</string>
 
 </resources>

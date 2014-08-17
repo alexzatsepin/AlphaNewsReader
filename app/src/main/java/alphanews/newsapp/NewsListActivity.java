@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -33,6 +34,14 @@ public class NewsListActivity extends ListActivity implements SwipeRefreshLayout
                                            android.R.color.holo_green_light,
                                            android.R.color.holo_red_light,
                                            android.R.color.black);
+
+        Button developerBtn = (Button)findViewById(R.id.developer);
+        developerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NewsListActivity.this, DeveloperInfoActivity.class));
+            }
+        });
     }
 
     @Override
